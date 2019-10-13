@@ -4,6 +4,7 @@
 // @version      0.5
 // @description  Displays a button in the openload frame
 // @author       Iryu
+// @match       https://openload.co/*
 // @match       https://openload.pw/*
 // @match       https://oload.monster/*
 // @grant        none
@@ -18,10 +19,11 @@ document.body.appendChild(button);
 
 var clickAction = function () {
   var location = $('video')[0].baseURI
-  var index = location.indexOf('er/')
-  var url = location.slice(0, index + 2)
+  var index = location.indexOf('/embed')
+  var url = location.slice(0, index)
   var l = $('video').attr('src');
   var link = url + l
+  console.log(link);
   window.open(link, '_self');
 };
 
