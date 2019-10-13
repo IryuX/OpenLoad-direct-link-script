@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Get direct links of OpenLoad
 // @namespace    http://tampermonkey.net/
-// @version      0.1
-// @description  try to take over the world!
-// @author       You
+// @version      0.5
+// @description  Displays a button in the openload frame
+// @author       Iryu
 // @match       https://openload.pw/*
 // @match       https://oload.monster/*
 // @grant        none
